@@ -18,7 +18,8 @@ _Webpage with form where user inputs number, number is returned in an array of 0
 
 ## Known Bugs
 
-_none YET_
+_doesn't change last number (user inputted number)_
+_doesn't count up from negative numbers and change them_
 
 ## Support and contact details
 

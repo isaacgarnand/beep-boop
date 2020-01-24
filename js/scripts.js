@@ -9,18 +9,19 @@ $(document).ready(function() {
     var reg1 = /1/
     var reg2 = /2/
     var reg3 = /3/
-    var regD = /\D+/
+    var regD = /^\d+$/
 
-    for (var i = 0; i < userInput; i++) {
-      if (regD.test(userInput) === true) {
-        alert("Do you think this is a game!?");
-      }
-      else {
-      intArray.push(i);
-      }
+    if (regD.test(userInput) === false) {
+      alert("Do you think this is a game!?");
     }
 
-    for (var i = 0; i <= intArray.length; i++) {
+    for (var i = 0; i <= userInput; i++) {
+      intArray.push(i);
+    }
+
+    console.log(intArray);
+
+    for (var i = 0; i < intArray.length; i++) {
       if (reg3.test(intArray[i]) === true) {
         outputArray.push("I'm sorry Dave, I can't do that.");
       }

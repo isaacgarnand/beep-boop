@@ -31,11 +31,11 @@ Behavior | Input | Output
 Takes number input and returns its | 0 | 0
 takes number and returns it in an array starting from 0 | 4 | 0,1,2,3,4
 replaces 1 with beep! | 4 | 0, beep!, 2, 3, 4
-""  "" | 12 | 0, beep!, 2, 3 .... 9, beep!, beep!, beep!
+replaces numbers with a 1 in them with beep! | 12 | 0, beep!, 2, 3 .... 9, beep!, beep!, beep!
 replaces 2 with boop! | 4 | 0, beep!, boop!, 3, 4
-""  "" | 13 | 0, beep!, boop!, 3, 4 ... 9, beep!, beep!, boop!, beep!
+replaces numbers with a 2 in them with boop! | 13 | 0, beep!, boop!, 3, 4 ... 9, beep!, beep!, boop!, beep!
 replaces 3 with "I'm sorry Dave, I can't do that." | 3 | 0, beep!, boop!, I'm sorry Dave, I can't do that.
-""  "" | 13 | 0, beep, boop, .... 9, beep!, beep!, boop!, I'm sorry Dave, I can't do that
+replaces numbers with 3 in them with 'dave'str | 13 | 0, beep, boop, .... 9, beep!, beep!, boop!, I'm sorry Dave, I can't do that
 user enters non-integer | a | alert\(You think this is a game!?\)
 
 ## Technologies Used

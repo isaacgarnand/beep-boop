@@ -2,7 +2,8 @@ $(document).ready(function() {
   $("form#input").submit(function(event) {
     event.preventDefault();
 
-    var userInput = $("input#usernumber").val();
+    var userNumber = $("input#usernumber").val();
+    var userName = $("input#username").val();
     var intArray = [];
     var outputArray = [];
     
@@ -11,15 +12,21 @@ $(document).ready(function() {
     var reg3 = /3/
     var regD = /^\d+$/
 
-    if (regD.test(userInput) === false) {
+    if (regD.test(userNumber) === false) {
       alert("Do you think this is a game!?");
     }
+    else if (regD.test(userName) === true) {
+      alert("Enter a name with only letters pls");
+    }
     else {
-      for (var i = 0; i <= userInput; i++) {
+      for (var i = 0; i <= userNumber; i++) {
         intArray.push(i);
       }
       for (var i = 0; i < intArray.length; i++) {
-        if (reg3.test(intArray[i]) === true) {
+        if (intArray[i] !== 0 && intArray[i] % 3 === 0) {
+          outputArray.push("I'm sorry " + userName + ", I can't do that.");
+        }
+        else if (reg3.test(intArray[i]) === true) {
           outputArray.push("I'm sorry Dave, I can't do that.");
         }
         else if (reg2.test(intArray[i]) === true) {

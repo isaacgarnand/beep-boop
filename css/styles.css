@@ -2,6 +2,14 @@ body {
   background-color: lightslategray
 }
 
+h1 {
+  font-family: monospace;
+  color: darkorchid;
+  text-shadow: 1px 1px 3px black;
+  margin-bottom: 2%;
+}
+
 #output {
   display: none
 }
+

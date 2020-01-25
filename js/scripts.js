@@ -11,11 +11,12 @@ $(document).ready(function() {
     var reg2 = /2/
     var reg3 = /3/
     var regD = /^\d+$/
+    var regA = /^[A-Za-z]+$/
 
     if (regD.test(userNumber) === false) {
       alert("Do you think this is a game!?");
     }
-    else if (regD.test(userName) === true) {
+    else if (regA.test(userName) === false) {
       alert("Enter a name with only letters pls");
     }
     else {

@@ -2,6 +2,11 @@ body {
   background-color: lightslategray
 }
 
+input#username, input#usernumber {
+  display: flex;
+  flex-direction: column;
+}
+
 h1 {
   font-family: monospace;
   color: darkorchid;
